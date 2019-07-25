@@ -3,8 +3,11 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap");
+
 body {
   margin: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 main {

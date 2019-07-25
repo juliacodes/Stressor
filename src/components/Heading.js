@@ -3,8 +3,8 @@ import { breakpoints } from "../MediaQueries";
 
 const sizes = {
   hero: {
-    fontSize: "48px",
-    lineHeight: "68px"
+    fontSize: "32px",
+    lineHeight: "48px"
   },
   large: {
     fontSize: "40px",
