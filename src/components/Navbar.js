@@ -10,6 +10,7 @@ const Navbar = styled.div`
   min-width: 94px;
   width: 5vw;
   min-height: 100vh;
+  background-color: white;
   box-shadow: 0px 0px 10px rgba(231, 231, 231, 0.65);
   border-radius: 0px 20px 20px 0px;
   align-items: center;

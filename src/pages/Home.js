@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import Layout from "../components/Layout";
-import Navbar from "../components/Navbar";
+import Main from "../components/Main";
 
 function Home() {
   return (
     <Layout>
-      <Navbar />
+      <Main />
     </Layout>
   );
 }
