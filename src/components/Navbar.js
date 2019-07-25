@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import Layout from "../components/Layout";
+import CalendarIcon from "../content/LinkIcons/calendar.svg";
+import DashIcon from "../content/LinkIcons/dash.svg";
+import HelpIcon from "../content/LinkIcons/help.svg";
+import SettingsIcon from "../content/LinkIcons/settings.svg";
 
 const Navbar = styled.div`
   min-width: 94px;
@@ -24,13 +27,23 @@ const LinkIcons = styled.div`
 const LinkIcon = styled.div`
   width: 50px;
   height: 50px;
-  background-color: blue;
   margin-bottom: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
 `;
-const HomeLink = styled(LinkIcon)``;
-const Calendar = styled(LinkIcon)``;
-const Settings = styled(LinkIcon)``;
-const Help = styled(LinkIcon)``;
+
+const HomeLink = styled(LinkIcon)`
+  background-image: url(${DashIcon});
+`;
+const Calendar = styled(LinkIcon)`
+  background-image: url(${CalendarIcon});
+`;
+const Settings = styled(LinkIcon)`
+  background-image: url(${SettingsIcon});
+`;
+const Help = styled(LinkIcon)`
+  background-image: url(${HelpIcon});
+`;
 
 function Home() {
   return (
