@@ -1,4 +1,5 @@
 import React from "react";
+import { useCurrentPageState } from "../hooks";
 import styled from "styled-components";
 import CalendarIcon from "../content/LinkIcons/calendar.svg";
 import DashIcon from "../content/LinkIcons/dash.svg";
@@ -46,11 +47,12 @@ const Help = styled(LinkIcon)`
 `;
 
 function Home() {
+  const { onClickSetPageState, pageState } = useCurrentPageState({});
   return (
     <Navbar>
       <LinkIcons>
-        <HomeLink />
-        <Calendar />
+        <HomeLink onClick={onClickSetPageState} />
+        <Calendar onClick={onClickSetPageState} />
         <Settings />
         <Help />
       </LinkIcons>
