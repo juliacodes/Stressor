@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import { colors } from "../MediaQueries";
 import Heading from "../components/Heading";
+import ClassGrid from "../components/ClassGrid";
 
 const MainContent = styled.div`
   min-width: 500px;
@@ -39,6 +40,7 @@ function Main() {
           Based on your current task count, you should be -{" "}
           <strong>stressed as hell.</strong>
         </p>
+        <ClassGrid />
       </DashCenter>
     </MainContent>
   );
