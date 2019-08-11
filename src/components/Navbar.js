@@ -1,6 +1,6 @@
 import React from "react";
 import { useCurrentPageState } from "../hooks";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import CalendarIcon from "../content/LinkIcons/calendar.svg";
 import DashIcon from "../content/LinkIcons/dash.svg";
 import HelpIcon from "../content/LinkIcons/help.svg";
@@ -12,7 +12,6 @@ const Navbar = styled.div`
   min-height: 100vh;
   background-color: white;
   box-shadow: 0px 0px 10px rgba(231, 231, 231, 0.65);
-  border-radius: 0px 20px 20px 0px;
   align-items: center;
   display: flex;
 `;
