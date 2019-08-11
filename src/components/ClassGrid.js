@@ -41,11 +41,13 @@ const CourseContainer = styled.div`
 class ClassGrid extends Component {
   render() {
     const numbers = [
-      { title: "Calculus", action: "Next assignment due Thursday" },
-      { title: "Calculus", action: "Next assignment due Thursday" },
-      3,
-      4,
-      5
+      {
+        title: "Calculus",
+        action: "Next assignment due Thursday",
+        degree: "high"
+      },
+      { title: "English", action: "Next assignment due Tomorrow" },
+      { title: "English", action: "Next assignment due Tomorrow" }
     ];
     const listItems = numbers.map(number => (
       <CourseContainer>
